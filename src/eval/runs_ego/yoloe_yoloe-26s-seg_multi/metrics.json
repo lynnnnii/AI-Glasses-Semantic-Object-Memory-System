@@ -1,0 +1,126 @@
+{
+  "model": "yoloe",
+  "weights": "yoloe-26s-seg.pt",
+  "prompt_set": "multi",
+  "prompts": {
+    "wallet": [
+      "wallet",
+      "leather wallet"
+    ],
+    "house/car key": [
+      "key",
+      "car key",
+      "house key"
+    ],
+    "mobile phone": [
+      "mobile phone",
+      "smartphone"
+    ],
+    "headphones": [
+      "headphones",
+      "earphones",
+      "earbuds"
+    ],
+    "glasses": [
+      "glasses",
+      "eyeglasses"
+    ],
+    "watch": [
+      "watch",
+      "wristwatch"
+    ],
+    "remote control": [
+      "remote control",
+      "remote"
+    ],
+    "phone charger": [
+      "phone charger",
+      "charging cable"
+    ]
+  },
+  "op_conf": 0.25,
+  "scoring": "LVIS federated (pos + neg_category_ids)",
+  "speed": {
+    "protocol": "batch=1, imgsz=640, warmup=10, repeats=5 x 100 images",
+    "device": "cpu",
+    "n_measurements": 500,
+    "ms_per_image_mean": 187.00168860144913,
+    "ms_per_image_std": 33.09410530986091,
+    "ms_per_image_median": 177.72539996076375,
+    "ms_per_image_p95": 254.47809502366,
+    "fps": 5.347545294798214,
+    "ultralytics_ms": {
+      "preprocess": 2.410128600895405,
+      "inference": 158.04742980143055,
+      "postprocess": 9.20501359924674
+    }
+  },
+  "images": 1623,
+  "sessions": 301,
+  "mAP50_8cls": 0.2991006267050113,
+  "mAP50_main4": 0.3799691310112297,
+  "precision@op": 0.7003610108303249,
+  "recall@op": 0.2626946513202437,
+  "recall@op_main4": 0.29083094555873923,
+  "fp@op_per_image": 0.10227972889710413,
+  "fp@op_on_confirmed_absent": 28,
+  "wrong_class@op": 10,
+  "per_class": {
+    "wallet": {
+      "n_gt": 236,
+      "AP50": 0.4487054333136394,
+      "precision@op": 0.6511627906976745,
+      "recall@op": 0.3559322033898305,
+      "fp@op": 45
+    },
+    "house/car key": {
+      "n_gt": 165,
+      "AP50": 0.28588304629339595,
+      "precision@op": 0.7666666666666667,
+      "recall@op": 0.1393939393939394,
+      "fp@op": 7
+    },
+    "mobile phone": {
+      "n_gt": 174,
+      "AP50": 0.30759754076413576,
+      "precision@op": 0.8518518518518519,
+      "recall@op": 0.26436781609195403,
+      "fp@op": 8
+    },
+    "headphones": {
+      "n_gt": 123,
+      "AP50": 0.47769050367374777,
+      "precision@op": 0.6493506493506493,
+      "recall@op": 0.4065040650406504,
+      "fp@op": 27
+    },
+    "glasses": {
+      "n_gt": 195,
+      "AP50": 0.20925292130361084,
+      "precision@op": 0.8709677419354839,
+      "recall@op": 0.13846153846153847,
+      "fp@op": 4
+    },
+    "watch": {
+      "n_gt": 184,
+      "AP50": 0.005484371966608426,
+      "precision@op": 0.0,
+      "recall@op": 0.0,
+      "fp@op": 8
+    },
+    "remote control": {
+      "n_gt": 303,
+      "AP50": 0.6075267296725467,
+      "precision@op": 0.7393364928909952,
+      "recall@op": 0.5148514851485149,
+      "fp@op": 55
+    },
+    "phone charger": {
+      "n_gt": 97,
+      "AP50": 0.050664466652405496,
+      "precision@op": 0.14285714285714285,
+      "recall@op": 0.020618556701030927,
+      "fp@op": 12
+    }
+  }
+}

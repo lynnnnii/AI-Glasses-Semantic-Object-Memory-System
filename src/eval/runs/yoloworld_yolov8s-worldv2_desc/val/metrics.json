@@ -1,0 +1,108 @@
+{
+  "model": "yoloworld",
+  "weights": "yolov8s-worldv2.pt",
+  "prompt_set": "desc",
+  "prompts": {
+    "bottle": [
+      "plastic bottle"
+    ],
+    "bucket": [
+      "plastic bucket"
+    ],
+    "faucet": [
+      "water faucet"
+    ],
+    "mug": [
+      "cup"
+    ],
+    "pliers": [
+      "pliers tool"
+    ],
+    "smartphone": [
+      "mobile phone"
+    ]
+  },
+  "speed": {
+    "protocol": "batch=1, imgsz=640, warmup=10, repeats=5 x 85 images",
+    "device": "cpu",
+    "n_measurements": 425,
+    "ms_per_image_mean": 253.04923317614285,
+    "ms_per_image_std": 49.011116971005094,
+    "ms_per_image_median": 252.02510005328804,
+    "ms_per_image_p95": 328.19775997195376,
+    "fps": 3.9518001593939576,
+    "ultralytics_ms": {
+      "preprocess": 2.9337592948885525,
+      "inference": 224.61260705775416,
+      "postprocess": 1.5348185883725391
+    }
+  },
+  "splits": [
+    "val"
+  ],
+  "op_conf": 0.25,
+  "images": 24,
+  "mAP50_all_classes": 0.8848963843752793,
+  "mAP50_classes_ge5gt": 0.8848963843752793,
+  "precision@op_overall": 0.5833333333333334,
+  "recall@op_overall": 0.5833333333333334,
+  "recall@op_hand_overlap": {
+    "n": 17,
+    "recall@op": 0.47058823529411764
+  },
+  "recall@op_free": {
+    "n": 7,
+    "recall@op": 0.8571428571428571
+  },
+  "fp@op_total": 10,
+  "fp@op_per_image": 0.4166666666666667,
+  "fp@op_on_negative_images": {
+    "images": 0,
+    "fp": 0
+  },
+  "wrong_class@op": 10,
+  "per_class": {
+    "bottle": {
+      "n_gt": 14,
+      "AP50": 0.8989056800416887,
+      "precision@op": 1.0,
+      "recall@op": 0.5,
+      "fp@op": 0
+    },
+    "bucket": {
+      "n_gt": 0,
+      "AP50": NaN,
+      "precision@op": 0.0,
+      "recall@op": NaN,
+      "fp@op": 8
+    },
+    "faucet": {
+      "n_gt": 0,
+      "AP50": NaN,
+      "precision@op": NaN,
+      "recall@op": NaN,
+      "fp@op": 0
+    },
+    "mug": {
+      "n_gt": 10,
+      "AP50": 0.87088708870887,
+      "precision@op": 1.0,
+      "recall@op": 0.7,
+      "fp@op": 0
+    },
+    "pliers": {
+      "n_gt": 0,
+      "AP50": NaN,
+      "precision@op": NaN,
+      "recall@op": NaN,
+      "fp@op": 0
+    },
+    "smartphone": {
+      "n_gt": 0,
+      "AP50": NaN,
+      "precision@op": 0.0,
+      "recall@op": NaN,
+      "fp@op": 2
+    }
+  }
+}

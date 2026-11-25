@@ -1,0 +1,116 @@
+{
+  "model": "yoloworld",
+  "weights": "yolov8s-worldv2.pt",
+  "prompt_set": "desc",
+  "prompts": {
+    "wallet": [
+      "leather wallet"
+    ],
+    "house/car key": [
+      "metal key"
+    ],
+    "mobile phone": [
+      "smartphone"
+    ],
+    "headphones": [
+      "earphones"
+    ],
+    "glasses": [
+      "eyeglasses"
+    ],
+    "watch": [
+      "wristwatch"
+    ],
+    "remote control": [
+      "TV remote control"
+    ],
+    "phone charger": [
+      "charging cable"
+    ]
+  },
+  "op_conf": 0.25,
+  "scoring": "LVIS federated (pos + neg_category_ids)",
+  "speed": {
+    "protocol": "batch=1, imgsz=640, warmup=10, repeats=5 x 100 images",
+    "device": "cpu",
+    "n_measurements": 500,
+    "ms_per_image_mean": 145.89369560359046,
+    "ms_per_image_std": 30.942484733621953,
+    "ms_per_image_median": 136.87584997387603,
+    "ms_per_image_p95": 199.91132496506899,
+    "fps": 6.85430577286295,
+    "ultralytics_ms": {
+      "preprocess": 2.055539204971865,
+      "inference": 125.04986620112322,
+      "postprocess": 1.2453828018624336
+    }
+  },
+  "images": 1623,
+  "sessions": 301,
+  "mAP50_8cls": 0.23802289734847407,
+  "mAP50_main4": 0.2626371987449045,
+  "precision@op": 0.6379928315412187,
+  "recall@op": 0.12051455653351388,
+  "recall@op_main4": 0.09455587392550144,
+  "fp@op_per_image": 0.06223043746149107,
+  "fp@op_on_confirmed_absent": 21,
+  "wrong_class@op": 8,
+  "per_class": {
+    "wallet": {
+      "n_gt": 236,
+      "AP50": 0.24148123947346986,
+      "precision@op": 0.6,
+      "recall@op": 0.0635593220338983,
+      "fp@op": 10
+    },
+    "house/car key": {
+      "n_gt": 165,
+      "AP50": 0.24263852881992484,
+      "precision@op": NaN,
+      "recall@op": 0.0,
+      "fp@op": 0
+    },
+    "mobile phone": {
+      "n_gt": 174,
+      "AP50": 0.41582441105405077,
+      "precision@op": 0.5930232558139535,
+      "recall@op": 0.29310344827586204,
+      "fp@op": 35
+    },
+    "headphones": {
+      "n_gt": 123,
+      "AP50": 0.15060461563217248,
+      "precision@op": NaN,
+      "recall@op": 0.0,
+      "fp@op": 0
+    },
+    "glasses": {
+      "n_gt": 195,
+      "AP50": 0.277998758461487,
+      "precision@op": 0.75,
+      "recall@op": 0.015384615384615385,
+      "fp@op": 1
+    },
+    "watch": {
+      "n_gt": 184,
+      "AP50": 0.07017818866313662,
+      "precision@op": 0.3333333333333333,
+      "recall@op": 0.005434782608695652,
+      "fp@op": 2
+    },
+    "remote control": {
+      "n_gt": 303,
+      "AP50": 0.4802473342081289,
+      "precision@op": 0.6708074534161491,
+      "recall@op": 0.3564356435643564,
+      "fp@op": 53
+    },
+    "phone charger": {
+      "n_gt": 97,
+      "AP50": 0.025210102475422064,
+      "precision@op": NaN,
+      "recall@op": 0.0,
+      "fp@op": 0
+    }
+  }
+}

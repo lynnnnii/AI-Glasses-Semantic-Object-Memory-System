@@ -1,0 +1,108 @@
+{
+  "model": "yoloe",
+  "weights": "yoloe-26s-seg.pt",
+  "prompt_set": "name",
+  "prompts": {
+    "bottle": [
+      "bottle"
+    ],
+    "bucket": [
+      "bucket"
+    ],
+    "faucet": [
+      "faucet"
+    ],
+    "mug": [
+      "mug"
+    ],
+    "pliers": [
+      "pliers"
+    ],
+    "smartphone": [
+      "smartphone"
+    ]
+  },
+  "speed": {
+    "protocol": "batch=1, imgsz=640, warmup=10, repeats=5 x 85 images",
+    "device": "auto",
+    "n_measurements": 425,
+    "ms_per_image_mean": 269.7088971747743,
+    "ms_per_image_std": 51.170469262451626,
+    "ms_per_image_median": 272.3416000371799,
+    "ms_per_image_p95": 356.3343399669975,
+    "fps": 3.707701193676192,
+    "ultralytics_ms": {
+      "preprocess": 2.8516051742960427,
+      "inference": 240.01136235618856,
+      "postprocess": 6.591667760273113
+    }
+  },
+  "splits": [
+    "val"
+  ],
+  "op_conf": 0.25,
+  "images": 24,
+  "mAP50_all_classes": 0.4925742574257426,
+  "mAP50_classes_ge5gt": 0.4925742574257426,
+  "precision@op_overall": 0.6,
+  "recall@op_overall": 0.5,
+  "recall@op_hand_overlap": {
+    "n": 17,
+    "recall@op": 0.5294117647058824
+  },
+  "recall@op_free": {
+    "n": 7,
+    "recall@op": 0.42857142857142855
+  },
+  "fp@op_total": 8,
+  "fp@op_per_image": 0.3333333333333333,
+  "fp@op_on_negative_images": {
+    "images": 0,
+    "fp": 0
+  },
+  "wrong_class@op": 7,
+  "per_class": {
+    "bottle": {
+      "n_gt": 14,
+      "AP50": 0.9851485148514852,
+      "precision@op": 0.9230769230769231,
+      "recall@op": 0.8571428571428571,
+      "fp@op": 1
+    },
+    "bucket": {
+      "n_gt": 0,
+      "AP50": NaN,
+      "precision@op": 0.0,
+      "recall@op": NaN,
+      "fp@op": 7
+    },
+    "faucet": {
+      "n_gt": 0,
+      "AP50": NaN,
+      "precision@op": NaN,
+      "recall@op": NaN,
+      "fp@op": 0
+    },
+    "mug": {
+      "n_gt": 10,
+      "AP50": 0.0,
+      "precision@op": NaN,
+      "recall@op": 0.0,
+      "fp@op": 0
+    },
+    "pliers": {
+      "n_gt": 0,
+      "AP50": NaN,
+      "precision@op": NaN,
+      "recall@op": NaN,
+      "fp@op": 0
+    },
+    "smartphone": {
+      "n_gt": 0,
+      "AP50": NaN,
+      "precision@op": NaN,
+      "recall@op": NaN,
+      "fp@op": 0
+    }
+  }
+}
