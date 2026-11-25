@@ -1,0 +1,9 @@
+﻿class,n_gt,AP50,precision@op,recall@op,fp@op
+wallet,236,0.2018,0.6957,0.0678,7
+house/car key,165,0.3616,0.8,0.1455,6
+mobile phone,174,0.547,0.8,0.3448,15
+headphones,123,0.2578,1.0,0.0244,0
+glasses,195,0.1449,0.9091,0.0513,1
+watch,184,0.0153,0.0,0.0,5
+remote control,303,0.5232,0.8878,0.2871,11
+phone charger,97,0.0128,0.125,0.0103,7

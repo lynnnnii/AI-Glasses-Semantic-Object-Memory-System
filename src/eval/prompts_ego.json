@@ -1,0 +1,33 @@
+{
+  "_note": "EgoObjects 8개 카테고리용. 두 모델 모두 같은 세트를 쓴다. 클래스당 여러 문구는 같은 클래스로 합쳐 채점(클래스별 NMS).",
+  "name": {
+    "wallet": ["wallet"],
+    "house/car key": ["key"],
+    "mobile phone": ["mobile phone"],
+    "headphones": ["headphones"],
+    "glasses": ["glasses"],
+    "watch": ["watch"],
+    "remote control": ["remote control"],
+    "phone charger": ["phone charger"]
+  },
+  "desc": {
+    "wallet": ["leather wallet"],
+    "house/car key": ["metal key"],
+    "mobile phone": ["smartphone"],
+    "headphones": ["earphones"],
+    "glasses": ["eyeglasses"],
+    "watch": ["wristwatch"],
+    "remote control": ["TV remote control"],
+    "phone charger": ["charging cable"]
+  },
+  "multi": {
+    "wallet": ["wallet", "leather wallet"],
+    "house/car key": ["key", "car key", "house key"],
+    "mobile phone": ["mobile phone", "smartphone"],
+    "headphones": ["headphones", "earphones", "earbuds"],
+    "glasses": ["glasses", "eyeglasses"],
+    "watch": ["watch", "wristwatch"],
+    "remote control": ["remote control", "remote"],
+    "phone charger": ["phone charger", "charging cable"]
+  }
+}
