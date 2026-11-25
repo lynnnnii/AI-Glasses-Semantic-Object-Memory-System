@@ -1,0 +1,27 @@
+
+# Python
+__pycache__/
+*.pyc
+
+# Conda / virtual environments
+.venv/
+venv/
+.env
+
+# Model weights
+*.pt
+*.pth
+*.safetensors
+
+# Local experiment data
+images/*
+!images/.gitkeep
+
+videos/*
+!videos/.gitkeep
+
+results/*
+!results/.gitkeep
+
+# IDE
+.vscode/
