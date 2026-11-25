@@ -1,0 +1,7 @@
+﻿class,n_gt,AP50,precision@op,recall@op,fp@op
+bottle,14,0.9947,0.9286,0.9286,1
+bucket,0,,0.0,,8
+faucet,0,,,,0
+mug,10,0.6142,1.0,0.4,0
+pliers,0,,,,0
+smartphone,0,,0.0,,2

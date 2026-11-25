@@ -1,0 +1,108 @@
+{
+  "model": "yoloe",
+  "weights": "yoloe-26s-seg.pt",
+  "prompt_set": "desc",
+  "prompts": {
+    "bottle": [
+      "plastic bottle"
+    ],
+    "bucket": [
+      "plastic bucket"
+    ],
+    "faucet": [
+      "water faucet"
+    ],
+    "mug": [
+      "cup"
+    ],
+    "pliers": [
+      "pliers tool"
+    ],
+    "smartphone": [
+      "mobile phone"
+    ]
+  },
+  "speed": {
+    "protocol": "batch=1, imgsz=640, warmup=10, repeats=5 x 85 images",
+    "device": "cpu",
+    "n_measurements": 425,
+    "ms_per_image_mean": 298.86220093569995,
+    "ms_per_image_std": 40.597031465074025,
+    "ms_per_image_median": 296.8349000439048,
+    "ms_per_image_p95": 363.69744008406997,
+    "fps": 3.3460236753564883,
+    "ultralytics_ms": {
+      "preprocess": 3.111796470852021,
+      "inference": 264.5093503536876,
+      "postprocess": 8.264897647039856
+    }
+  },
+  "splits": [
+    "val"
+  ],
+  "op_conf": 0.25,
+  "images": 24,
+  "mAP50_all_classes": 0.8311881188118818,
+  "mAP50_classes_ge5gt": 0.8311881188118818,
+  "precision@op_overall": 1.0,
+  "recall@op_overall": 0.375,
+  "recall@op_hand_overlap": {
+    "n": 17,
+    "recall@op": 0.35294117647058826
+  },
+  "recall@op_free": {
+    "n": 7,
+    "recall@op": 0.42857142857142855
+  },
+  "fp@op_total": 0,
+  "fp@op_per_image": 0.0,
+  "fp@op_on_negative_images": {
+    "images": 0,
+    "fp": 0
+  },
+  "wrong_class@op": 0,
+  "per_class": {
+    "bottle": {
+      "n_gt": 14,
+      "AP50": 0.7821782178217822,
+      "precision@op": 1.0,
+      "recall@op": 0.21428571428571427,
+      "fp@op": 0
+    },
+    "bucket": {
+      "n_gt": 0,
+      "AP50": NaN,
+      "precision@op": NaN,
+      "recall@op": NaN,
+      "fp@op": 0
+    },
+    "faucet": {
+      "n_gt": 0,
+      "AP50": NaN,
+      "precision@op": NaN,
+      "recall@op": NaN,
+      "fp@op": 0
+    },
+    "mug": {
+      "n_gt": 10,
+      "AP50": 0.8801980198019814,
+      "precision@op": 1.0,
+      "recall@op": 0.6,
+      "fp@op": 0
+    },
+    "pliers": {
+      "n_gt": 0,
+      "AP50": NaN,
+      "precision@op": NaN,
+      "recall@op": NaN,
+      "fp@op": 0
+    },
+    "smartphone": {
+      "n_gt": 0,
+      "AP50": NaN,
+      "precision@op": NaN,
+      "recall@op": NaN,
+      "fp@op": 0
+    }
+  }
+}

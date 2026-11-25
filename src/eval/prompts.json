@@ -1,0 +1,27 @@
+{
+  "_note": "두 모델 모두 같은 프롬프트 세트를 써야 공정함. 클래스당 여러 문구를 넣으면 모두 같은 클래스로 합쳐서 채점함(중복 박스는 NMS로 제거).",
+  "name": {
+    "bottle": ["bottle"],
+    "bucket": ["bucket"],
+    "faucet": ["faucet"],
+    "mug": ["mug"],
+    "pliers": ["pliers"],
+    "smartphone": ["smartphone"]
+  },
+  "desc": {
+    "bottle": ["plastic bottle"],
+    "bucket": ["plastic bucket"],
+    "faucet": ["water faucet"],
+    "mug": ["cup"],
+    "pliers": ["pliers tool"],
+    "smartphone": ["mobile phone"]
+  },
+  "multi": {
+    "bottle": ["bottle", "plastic bottle"],
+    "bucket": ["bucket", "plastic container"],
+    "faucet": ["faucet", "tap"],
+    "mug": ["mug", "cup"],
+    "pliers": ["pliers"],
+    "smartphone": ["smartphone", "mobile phone"]
+  }
+}

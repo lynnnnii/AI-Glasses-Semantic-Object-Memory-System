@@ -25,3 +25,11 @@ results/*
 
 # IDE
 .vscode/
+
+# Evaluation data (EgoGrasp: internal use only, do not redistribute)
+data/*
+!data/.gitkeep
+
+# Evaluation outputs that contain images or raw predictions
+src/eval/runs/*/vis/
+src/eval/runs/*/preds/

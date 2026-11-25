@@ -1,0 +1,109 @@
+{
+  "model": "yoloe",
+  "weights": "yoloe-26s-seg.pt",
+  "prompt_set": "name",
+  "prompts": {
+    "bottle": [
+      "bottle"
+    ],
+    "bucket": [
+      "bucket"
+    ],
+    "faucet": [
+      "faucet"
+    ],
+    "mug": [
+      "mug"
+    ],
+    "pliers": [
+      "pliers"
+    ],
+    "smartphone": [
+      "smartphone"
+    ]
+  },
+  "speed": {
+    "protocol": "batch=1, imgsz=640, warmup=10, repeats=5 x 85 images",
+    "device": "auto",
+    "n_measurements": 425,
+    "ms_per_image_mean": 269.7088971747743,
+    "ms_per_image_std": 51.170469262451626,
+    "ms_per_image_median": 272.3416000371799,
+    "ms_per_image_p95": 356.3343399669975,
+    "fps": 3.707701193676192,
+    "ultralytics_ms": {
+      "preprocess": 2.8516051742960427,
+      "inference": 240.01136235618856,
+      "postprocess": 6.591667760273113
+    }
+  },
+  "splits": [
+    "val",
+    "test"
+  ],
+  "op_conf": 0.25,
+  "images": 85,
+  "mAP50_all_classes": 0.5243913456940148,
+  "mAP50_classes_ge5gt": 0.6138849994482024,
+  "precision@op_overall": 0.7205882352941176,
+  "recall@op_overall": 0.6621621621621622,
+  "recall@op_hand_overlap": {
+    "n": 47,
+    "recall@op": 0.6808510638297872
+  },
+  "recall@op_free": {
+    "n": 27,
+    "recall@op": 0.6296296296296297
+  },
+  "fp@op_total": 19,
+  "fp@op_per_image": 0.2235294117647059,
+  "fp@op_on_negative_images": {
+    "images": 16,
+    "fp": 3
+  },
+  "wrong_class@op": 8,
+  "per_class": {
+    "bottle": {
+      "n_gt": 24,
+      "AP50": 0.9556808547327879,
+      "precision@op": 0.84,
+      "recall@op": 0.875,
+      "fp@op": 4
+    },
+    "bucket": {
+      "n_gt": 5,
+      "AP50": 0.2004950495049505,
+      "precision@op": 0.125,
+      "recall@op": 0.2,
+      "fp@op": 7
+    },
+    "faucet": {
+      "n_gt": 7,
+      "AP50": 0.408062234794908,
+      "precision@op": 0.6666666666666666,
+      "recall@op": 0.2857142857142857,
+      "fp@op": 1
+    },
+    "mug": {
+      "n_gt": 24,
+      "AP50": 0.5841584158415841,
+      "precision@op": 1.0,
+      "recall@op": 0.5416666666666666,
+      "fp@op": 0
+    },
+    "pliers": {
+      "n_gt": 1,
+      "AP50": 0.07692307692307683,
+      "precision@op": 0.0,
+      "recall@op": 0.0,
+      "fp@op": 2
+    },
+    "smartphone": {
+      "n_gt": 13,
+      "AP50": 0.9210284423667818,
+      "precision@op": 0.7058823529411765,
+      "recall@op": 0.9230769230769231,
+      "fp@op": 5
+    }
+  }
+}
