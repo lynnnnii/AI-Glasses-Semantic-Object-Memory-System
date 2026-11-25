@@ -1,8 +1,21 @@
 
+# Deep Learning
 torch
 torchvision
-transformers
+
+# Grounding DINO
+transformers>=4.53,<5
+accelerate
+
+# Object Detection (YOLO-World)
 ultralytics
+
+# Image and Video Processing
 opencv-python
 Pillow
-accelerate
+
+# Numerical Operations
+numpy
+
+# Hand Detection (추후 설치)
+# mediapipe
